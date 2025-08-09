@@ -29,8 +29,8 @@ const HighlightsSection: React.FC = () => {
                             <CardContent className="p-2">
                                 <div className="rounded-lg overflow-hidden bg-gray-800">
                                     <iframe
-                                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7336347520568115200"
-                                        height="600"
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7336347520568115200?collapsed=1"
+                                        height="400"
                                         width="100%"
                                         frameBorder="0"
                                         allowFullScreen
@@ -52,8 +52,8 @@ const HighlightsSection: React.FC = () => {
                             <CardContent className="p-2">
                                 <div className="rounded-lg overflow-hidden bg-gray-800">
                                     <iframe
-                                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7336701336937213953"
-                                        height="600"
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7336701336937213953?collapsed=1"
+                                        height="400"
                                         width="100%"
                                         frameBorder="0"
                                         allowFullScreen
@@ -75,8 +75,8 @@ const HighlightsSection: React.FC = () => {
                             <CardContent className="p-2">
                                 <div className="rounded-lg overflow-hidden bg-gray-800">
                                     <iframe
-                                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7311091020438417408"
-                                        height="600"
+                                        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7311091020438417408?collapsed=1"
+                                        height="400"
                                         width="100%"
                                         frameBorder="0"
                                         allowFullScreen
@@ -91,7 +91,7 @@ const HighlightsSection: React.FC = () => {
 
                 {/* YouTube Video Section */}
                 <div className="mb-12">
-                    <h3 className="text-2xl font-bold mb-8 text-center text-cyan-400">Featured Video</h3>
+                    {/* <h3 className="text-2xl font-bold mb-8 text-center text-cyan-400">Featured Video</h3> */}
                     <div className="max-w-4xl mx-auto">
                         <Card className="bg-gradient-to-br from-gray-900/50 to-black/50 border-cyan-500/30 hover:border-pink-500/50 transition-all duration-300">
                             <CardHeader>

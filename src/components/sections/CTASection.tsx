@@ -20,9 +20,16 @@ const CTASection: React.FC = () => {
                     <Button
                         size="lg"
                         className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 py-3"
+                        asChild
                     >
-                        Join Our WhatsApp Community
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        <a
+                            href="https://chat.whatsapp.com/EUKnMxxlKEFJPC7R7oFEes"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Join Our WhatsApp Community
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
                     </Button>
                     <Button
                         size="lg"
@@ -41,7 +48,7 @@ const CTASection: React.FC = () => {
                     </Button>
                 </div>
 
-                <div className="max-w-md mx-auto">
+                {/* <div className="max-w-md mx-auto">
                     <div className="flex gap-2 mb-4">
                         <Input
                             type="email"
@@ -53,7 +60,7 @@ const CTASection: React.FC = () => {
                         </Button>
                     </div>
                     <p className="text-sm text-gray-400">Get notified about upcoming events and opportunities</p>
-                </div>
+                </div> */}
             </div>
         </section>
     )

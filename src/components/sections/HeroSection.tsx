@@ -34,9 +34,16 @@ const HeroSection: React.FC = () => {
                     <Button
                         size="lg"
                         className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 py-3"
+                        asChild
                     >
-                        Join Our Community
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        <a
+                            href="https://chat.whatsapp.com/EUKnMxxlKEFJPC7R7oFEes"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Join Our Community
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
                     </Button>
                 </div>
 

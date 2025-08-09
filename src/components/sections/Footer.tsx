@@ -7,7 +7,11 @@ const Footer: React.FC = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="flex items-center space-x-2 mb-4 md:mb-0">
-                        <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-lg"></div>
+                        <img
+                            src="/logo.jpg"
+                            alt="Quantix Logo"
+                            className="w-8 h-8 rounded-lg object-cover"
+                        />
                         <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent">
                             QUANTIX
                         </span>

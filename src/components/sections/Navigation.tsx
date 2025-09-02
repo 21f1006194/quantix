@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from '../ui/Button'
+import { Link } from 'react-router-dom'
+import { JoinNowDropdown } from '../ui/Dropdown'
 
 const Navigation: React.FC = () => {
     const scrollToSection = (sectionId: string) => {
@@ -12,7 +13,7 @@ const Navigation: React.FC = () => {
     return (
         <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-purple-500/20">
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <div className="flex items-center space-x-2">
+                <Link to="/" className="flex items-center space-x-2">
                     <img
                         src="/logo.jpg"
                         alt="Quantix Logo"
@@ -21,7 +22,7 @@ const Navigation: React.FC = () => {
                     <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-cyan-500 bg-clip-text text-transparent">
                         QUANTIX
                     </span>
-                </div>
+                </Link>
                 <div className="hidden md:flex items-center space-x-6">
                     <button
                         onClick={() => scrollToSection('about')}
@@ -47,18 +48,13 @@ const Navigation: React.FC = () => {
                     >
                         Highlights
                     </button>
-                    <Button
-                        className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700"
-                        asChild
+                    <Link
+                        to="/join-core-team"
+                        className="hover:text-pink-400 transition-colors"
                     >
-                        <a
-                            href="https://chat.whatsapp.com/EUKnMxxlKEFJPC7R7oFEes"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Join Now
-                        </a>
-                    </Button>
+                        Core Team
+                    </Link>
+                    <JoinNowDropdown />
                 </div>
             </div>
         </nav>

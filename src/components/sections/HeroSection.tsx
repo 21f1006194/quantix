@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Button } from '../ui/Button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, UserPlus } from 'lucide-react'
 import quantixLogo from '../../assets/logo.jpg'
+import { CONFIG } from '../../config/constants'
 
 const HeroSection: React.FC = () => {
     return (
@@ -37,7 +39,7 @@ const HeroSection: React.FC = () => {
                         asChild
                     >
                         <a
-                            href="https://chat.whatsapp.com/EUKnMxxlKEFJPC7R7oFEes"
+                            href={CONFIG.whatsappGroup}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -45,6 +47,30 @@ const HeroSection: React.FC = () => {
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
                     </Button>
+                    
+                    {CONFIG.isHiring && (
+                        <div className="relative animate-float">
+                            {/* Button with golden moving border animation */}
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="relative text-lg px-8 py-3 border-purple-500 text-purple-400 hover:bg-purple-500/10 hover:scale-105 hover:border-pink-400 hover:text-pink-300 transition-all duration-300 animate-golden-border"
+                                asChild
+                            >
+                                <Link to="/join-core-team">
+                                    <span className="relative z-10 flex items-center">
+                                        Join Our Core Team
+                                        <UserPlus className="ml-2 h-5 w-5 animate-pulse" />
+                                    </span>
+                                </Link>
+                            </Button>
+                            
+                            {/* Floating sparkles */}
+                            <div className="absolute -top-2 -right-2 w-3 h-3 bg-pink-400 rounded-full animate-sparkle"></div>
+                            <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-purple-400 rounded-full animate-sparkle animation-delay-300"></div>
+                            <div className="absolute top-1/2 -right-3 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-sparkle animation-delay-600"></div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">

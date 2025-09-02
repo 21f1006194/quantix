@@ -13,8 +13,8 @@ const RoadmapSection: React.FC = () => {
     ]
 
     const keyEvents = [
-        { event: "Quant Finance & Investing 2.0", date: "August 2025", speaker: "Pramod S. Rajani" },
-        { event: "Quant Quest 2.0", date: "September 2025", speaker: "Flagship Competition" },
+        { event: "Quant Finance & Investing 2.0", date: "September 2025", speaker: "Pramod S. Rajani" },
+        // { event: "Quant Quest 2.0", date: "September 2025", speaker: "Flagship Competition" },
         { event: "High Frequency Trades", date: "September 2025", speaker: "Souham Sengupta" },
         { event: "Winter of Quant: Speaker Series", date: "Oct–Nov 2025", speaker: "Curated by Mehul Mehta" },
     ]
